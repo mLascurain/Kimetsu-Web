@@ -1,0 +1,193 @@
+
+/* variables */
+:root {
+  --rojo-carmesi: #DC143C;
+  --negro-azabache: #1c1b1b;
+  --gris-oscuro: #383435;
+  --verde-musgo: #2f4538;
+  --amarillo-dorado: #CDA434;
+  --azul-medianoche: #191970;
+  --blanco-puro: #ffffff;
+  --negro-puro: #000000;
+}
+
+/* reset */
+body, p, a, ul, li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+/* estilos generales */
+body{
+    background-color: var(--negro-azabache);
+    box-sizing: border-box;
+}
+
+p, li, a, i{
+    color: var(--blanco-puro);
+}
+
+/* fonts */
+body{
+    font-family: 'Inter', 'sans-serif';
+}
+
+/* estilos para celular */
+
+/* BARRA DE NAVEGACION */
+.header__nav{
+    position: sticky;
+}
+
+.header__nav div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 1rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid var(--rojo-carmesi);
+}
+
+.container-open{
+    display: block;
+}
+
+/*.ul-container{
+    border-bottom: 2px solid var(--rojo-carmesi);
+    display: none;
+    transition: 0.3s;
+}*/
+
+.header__nav div i{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.header__logo{
+    width: 15%;
+    height: 15%;
+}
+
+.nav__ul-activate{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid var(--rojo-carmesi);
+    background: var(--negro-azabache);
+    transition: 0.4s;
+}
+
+.nav__ul{
+    position: absolute;
+    top: -500%;
+}
+
+.ul__li{
+    background: var(--gris-oscuro);
+    width: 40vw;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+/* PRINCIPAL */
+.principal article{
+    width: 85vw;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 1rem;
+}
+
+.principal__buttons{
+    display: flex;
+    gap: 0.4rem;
+    padding-top: 0.9rem;
+}
+
+.principal h1{
+    font-size: 2rem;
+}
+
+.principal h1, p{
+    color: var(--blanco-puro);
+}
+
+.principal div{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.principal div img{
+    width: 95%;
+    height: 95%;
+    margin-top: 0.5rem;
+    border: solid 2px var(--gris-oscuro);
+}
+
+/* estilos para tablets chicas */
+@media screen and (min-width: 620px){
+}
+
+/* estilos para tablets grandes y laptops */
+@media screen and (min-width: 960px){
+    .nav__toggle{
+        display: none;
+    }
+    .nav__ul {
+        flex-direction: row;
+    }
+
+    .nav__ul li{
+        display: block;
+    }
+}
+
+/* estilos para desktop */
+@media screen and (min-width: 1200px){
+    .icon{
+        display: none;
+    }
+    .nav__ul {
+        display: flex;
+        position: relative;
+        top: -500%;
+        flex-direction: row;
+        margin-right: 1.5rem;
+        justify-content: end;
+        gap: 0.4rem;
+    }
+
+    .nav__ul li{
+        display: flex;
+        width: 8rem;
+    }
+
+    .header__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 2px var(--rojo-carmesi);
+    }
+
+    .header__nav div{
+        display: inline;
+        border-bottom: none;
+    }
+
+}
