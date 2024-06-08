@@ -113,6 +113,7 @@ body{
     gap: 1rem;
     display: flex;
     flex-direction: column;
+    margin-bottom: -0.5rem;
 }
 
 .principal article{
@@ -221,6 +222,7 @@ body{
     text-align: center;
     border-bottom: 2px solid var(--rojo-carmesi);
     padding: 1rem 0;
+    margin-bottom: -0.4rem;
 }
 
 .cards__card{
@@ -280,6 +282,7 @@ body{
     color: var(--blanco-puro);
     border-top: 2px solid var(--rojo-carmesi);
     border-bottom: 2px solid var(--rojo-carmesi);
+    margin-top: -1rem;
 }
 
 /* contenedor de la galeria */
@@ -303,28 +306,22 @@ body{
 .terciario__galeria article div{
     display: flex;
     justify-content: space-between;
-    width: 80vw;
+    flex-wrap: wrap;
     max-width: 320px;
+    width: 75vw;
     padding: 1rem;
 }
 
 /* botones de atras y adelante */
 .prev, .next {
     cursor: pointer;
-    top: 50%;
-    width: auto;
-    margin: 0 0.6rem;
     color: white;
     font-weight: bold;
     font-size: 2rem;
     transition: 0.6s ease;
     border-radius: 0 4px 4px 0;
     user-select: none;
-}
-
-/* pone el boton de siguiente a la derecha */
-.next {
-    border-radius: 4px 0 0 4px;
+    margin-top: -4rem;
 }
 
 /* agrega un fondo oscuro con opacidad cuando se hace hover */
@@ -399,9 +396,10 @@ footer{
     align-items: center;
     flex-direction: column;
     border-top: 2px solid var(--rojo-carmesi);
+    gap: 0.5rem;
 }
 
-footer h3{
+footer a{
     color: var(--gris-claro);
     font-size: 1rem;
 }
