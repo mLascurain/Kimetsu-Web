@@ -118,20 +118,26 @@ body{
 .principal article{
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     flex-direction: column;
     gap: 1rem;  
+    text-align: center;
 }
 
 .principal__buttons{
     display: flex;
     gap: 0.6rem;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .principal__buttons button{
-    width: 10rem;
+    width: 100%;
     height: 2.5rem;
+}
+
+.principal__buttons a{
+    width: 100%;
 }
 
 .article__button-wn{
@@ -150,14 +156,13 @@ body{
 
 .article__button-lm{
     border: solid 2px var(--rojo-carmesi);
-    background: transparent;
+    background: rgba(99, 22, 66, 0.05);
     color: var(--rojo-carmesi);
     border-radius: 2px;
 }
 
 .article__button-lm:hover{
     cursor: pointer;
-    background: rgba(99, 22, 66, 0.05);
     transition: 0.2s;
     transform: scale(0.98);;
 }
@@ -207,6 +212,10 @@ body{
     border-top: 2px solid var(--rojo-carmesi);
 }
 
+.secundario__article h2{
+    margin: 0;
+}
+
 .secundario__article p{
     color: var(--gris-claro);
     text-align: center;
@@ -224,7 +233,7 @@ body{
     margin: 1rem 0;
     border: 2px solid var(--gris-oscuro);
     cursor: pointer;
-    transition: transform 0.2s; 
+    transition: transform 0.2s;
 }
 
 .cards__card h2{
@@ -238,7 +247,6 @@ body{
 .cards__card p{
     color: var(--gris-claro);
     text-align: center;
-    
 }
 
 .cards__card button{
@@ -284,8 +292,8 @@ body{
 }
 
 /* escone las imagenes por default */
-.mySlides {
-  display: none;
+.slides {
+    display: none;
 }
 
 .terciario__galeria article{
@@ -302,71 +310,100 @@ body{
 
 /* botones de atras y adelante */
 .prev, .next {
-  cursor: pointer;
-  top: 50%;
-  width: auto;
-  margin: 0 0.6rem;
-  color: white;
-  font-weight: bold;
-  font-size: 2rem;
-  transition: 0.6s ease;
-  border-radius: 0 4px 4px 0;
-  user-select: none;
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    margin: 0 0.6rem;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.6s ease;
+    border-radius: 0 4px 4px 0;
+    user-select: none;
 }
 
 /* pone el boton de siguiente a la derecha */
 .next {
-  border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
 }
 
 /* agrega un fondo oscuro con opacidad cuando se hace hover */
 .prev:hover, .next:hover {
-  color: var(--rojo-carmesi);
+    color: var(--rojo-carmesi);
 }
 
 /* texto o "caption" */
 .text {
-  color: #f2f2f2;
-  font-size: 1rem;
-  width: 100%;
-  text-align: center;
+    color: #f2f2f2;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
 }
 
 /* los numeros de las fotos (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 0.8rem;
-  padding:0.68rem 0.8rem;
-  position: absolute;
-  top: 0;
-  background: var(--rojo-carmesi);
+    color: #f2f2f2;
+    font-size: 0.8rem;
+    padding:0.68rem 0.8rem;
+    position: absolute;
+    top: 0;
+    background: var(--rojo-carmesi);
 }
 
 /* puntitos abajo de las fotos */
 .dot {
-  cursor: pointer;
-  height: 0.9rem;
-  width: 0.9rem;
-  margin: 0 0.125rem;
-  background-color: var(--gris-oscuro);
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 0.9rem;
+    width: 0.9rem;
+    margin: 0 0.125rem;
+    background-color: var(--gris-oscuro);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: var(--rojo-carmesi);
+    background-color: var(--rojo-carmesi);
 }
 
 /* animacion de fade */
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {opacity: 0.4}
-  to {opacity: 1}
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+.slides div a{
+    border: 2px solid var(--rojo-carmesi);
+    background: rgba(99, 22, 66, 0.05);
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.slides div a:hover{
+    transform: scale(0.98);;
+}
+
+footer{
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 2px solid var(--rojo-carmesi);
+}
+
+footer h3{
+    color: var(--gris-claro);
+    font-size: 1rem;
 }
 
 /* estilos para tablets chicas */
