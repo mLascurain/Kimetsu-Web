@@ -113,7 +113,6 @@ body{
     gap: 1rem;
     display: flex;
     flex-direction: column;
-    margin-bottom: -0.5rem;
 }
 
 .principal article{
@@ -222,7 +221,6 @@ body{
     text-align: center;
     border-bottom: 2px solid var(--rojo-carmesi);
     padding: 1rem 0;
-    margin-bottom: -0.4rem;
 }
 
 .cards__card{
@@ -282,7 +280,6 @@ body{
     color: var(--blanco-puro);
     border-top: 2px solid var(--rojo-carmesi);
     border-bottom: 2px solid var(--rojo-carmesi);
-    margin-top: -1rem;
 }
 
 /* contenedor de la galeria */
@@ -306,22 +303,28 @@ body{
 .terciario__galeria article div{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    width: 80vw;
     max-width: 320px;
-    width: 75vw;
     padding: 1rem;
 }
 
 /* botones de atras y adelante */
 .prev, .next {
     cursor: pointer;
+    top: 50%;
+    width: auto;
+    margin: 0 0.6rem;
     color: white;
     font-weight: bold;
     font-size: 2rem;
     transition: 0.6s ease;
     border-radius: 0 4px 4px 0;
     user-select: none;
-    margin-top: -4rem;
+}
+
+/* pone el boton de siguiente a la derecha */
+.next {
+    border-radius: 4px 0 0 4px;
 }
 
 /* agrega un fondo oscuro con opacidad cuando se hace hover */
@@ -390,58 +393,58 @@ body{
 }
 
 footer{
-    height: 10rem;
+    height: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-top: 2px solid var(--rojo-carmesi);
+}
+
+.footer__container{
+    display: flex;
+    width: 10rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 0.5rem;
 }
 
-footer a{
+.footer__container a{
     color: var(--gris-claro);
-    font-size: 1rem;
-    padding: 0.5rem;
+    border-bottom: 1px solid var(--negro-azabache);
+}
+
+.footer__container a:hover{
+    border-bottom: 1px solid var(--blanco-puro);
+    color: var(--blanco-puro);
+}
+
+.footer__container:last-child{
+    padding: 2rem;
+}
+
+.footer__container h3{
+    color: var(--gris-claro);
+    font-size: 0.98rem;
+    padding-top: 2rem;
+}
+
+/* estilos para tablets chicas */
+@media screen and (min-width: 620px){
 }
 
 /* estilos para tablets grandes y laptops */
 @media screen and (min-width: 960px){
-    .header__logo{
-        width: 8%;
-        height: 8%;
+    .nav__toggle{
+        display: none;
+    }
+    .nav__ul {
+        flex-direction: row;
     }
 
-    .ul__li a{
-        font-size: 1.3rem;
-    }
-
-    .terciario__h2, .secundario__article, .secundario__article p{
-        border: none;
-    }
-
-    .principal{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .principal article{
-        width: 90%;
-        margin-top: 0.6rem;
-    }
-
-    .secundario__article{
-        width: 90%;
-    }
-
-    .article__cards{
-        width: 90%;
-    }
-
-    .principal div img{
-        height: 90%;
-        width: 90%;
+    .nav__ul li{
+        display: block;
     }
 }
 
