@@ -276,7 +276,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    margin-top: -1.8rem;
     color: var(--blanco-puro);
     border-top: 2px solid var(--rojo-carmesi);
     border-bottom: 2px solid var(--rojo-carmesi);
@@ -289,6 +290,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 /* escone las imagenes por default */
@@ -296,40 +298,24 @@ body{
     display: none;
 }
 
-.terciario__galeria article{
-    position: absolute;
-}
-
-.terciario__galeria article div{
-    display: flex;
-    justify-content: space-between;
-    width: 80vw;
-    max-width: 320px;
-    padding: 1rem;
-}
-
 /* botones de atras y adelante */
 .prev, .next {
     cursor: pointer;
-    top: 50%;
     width: auto;
-    margin: 0 0.6rem;
-    color: white;
+    margin: 0 0.2rem;
+    color: var(--negro-azabache);
     font-weight: bold;
     font-size: 2rem;
     transition: 0.6s ease;
-    border-radius: 0 4px 4px 0;
+    border-radius: 4px;
     user-select: none;
-}
-
-/* pone el boton de siguiente a la derecha */
-.next {
-    border-radius: 4px 0 0 4px;
+    background: var(--rojo-carmesi);
+    padding: 0.3rem 0.6rem;
 }
 
 /* agrega un fondo oscuro con opacidad cuando se hace hover */
 .prev:hover, .next:hover {
-    color: var(--rojo-carmesi);
+    color: var(--blanco-puro);
 }
 
 /* texto o "caption" */
@@ -413,6 +399,7 @@ footer{
 .footer__container a{
     color: var(--gris-claro);
     border-bottom: 1px solid var(--negro-azabache);
+    margin-top: -0.5rem;
 }
 
 .footer__container a:hover{
@@ -421,21 +408,16 @@ footer{
 }
 
 .footer__container:last-child{
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .footer__container h3{
-    color: var(--gris-claro);
-    font-size: 0.98rem;
-    padding-top: 2rem;
-}
-
-/* estilos para tablets chicas */
-@media screen and (min-width: 620px){
+    color: var(--blanco-puro);
+    font-size: 1.15rem;
 }
 
 /* estilos para tablets grandes y laptops */
-@media screen and (min-width: 960px){
+@media screen and (min-width: 620px){
     .nav__toggle{
         display: none;
     }
@@ -445,6 +427,37 @@ footer{
 
     .nav__ul li{
         display: block;
+    }
+
+    .terciario__h2{
+        border-bottom: none;
+        border-top: none;
+    }
+
+    .secundario__article p{
+        border-bottom: none;
+    }
+
+    .secundario__article{
+        border-top: none;
+    }
+
+    .principal{
+        padding: 2rem;
+        margin-bottom: -2rem;
+    }
+
+    .secundario{
+        padding: 2rem;
+        margin-bottom: -2rem;
+    }
+
+    .terciario{
+        padding: 2rem;
+    }
+
+    .header__nav div{
+        padding: 2rem;
     }
 }
 
