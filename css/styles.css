@@ -5,16 +5,16 @@
 
 /* variables */
 :root {
-  --rojo-carmesi: #DC143C;
-  --rojo-oscuro: #BB143A;
-  --negro-azabache: #1c1b1b;
-  --gris-oscuro: #343031;
-  --gris-claro: #C8C6CE;
-  --verde-musgo: #2f4538;
-  --amarillo-dorado: #CDA434;
-  --azul-medianoche: #191970;
-  --blanco-puro: #ffffff;
-  --negro-puro: #000000;
+    --rojo-carmesi: #DC143C;
+    --rojo-oscuro: #BB143A;
+    --negro-azabache: #1c1b1b;
+    --gris-oscuro: #343031;
+    --gris-claro: #C8C6CE;
+    --verde-musgo: #2f4538;
+    --amarillo-dorado: #CDA434;
+    --azul-medianoche: #191970;
+    --blanco-puro: #ffffff;
+    --negro-puro: #000000;
 }
 
 /* reset */
@@ -493,4 +493,62 @@ footer{
         border-bottom: none;
     }
 
+    .principal{
+        flex-direction: row;
+        padding: 3rem;
+        height: 65vh;
+    }
+
+    .principal article{
+        width: 60%;
+    }
+
+    .principal__buttons{
+        width: 100%;
+    }
+
+    .principal__buttons button{
+        width: 12rem;
+    }
+
+    .principal p{
+        width: 75%;
+    }
+
+    .principal div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .principal div img{
+        width: 100%;
+        height: 80%;
+        margin-right: 6.5rem;
+    }
+
+    .secundario{
+        margin: 3rem 8rem;
+        margin-top: 5rem;
+        border-top: 2px solid var(--rojo-carmesi);
+        border-bottom: 2px solid var(--rojo-carmesi);
+    }
+
+    .secundario__article p{
+        width: 50rem;
+    }
+
+    .cards__card{
+        width: 25rem;
+    }
+
+    .cards__card p{
+        width: 20rem;
+    }
+
+    .article__cards{
+        display: flex;
+        gap: 1rem;
+        flex-direction: row;
+    }
 }
