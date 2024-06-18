@@ -16,16 +16,16 @@
     <header class="header">
         <nav class="header__nav">
             <div>
-                <img class="header__logo" src="imagenes/logo.png" alt="Kimetsu No Yaiba logo">
+                <a href="#"><img class="header__logo" src="imagenes/logo.png" alt="Kimetsu No Yaiba logo"></a>
                 <i class="fa fa-bars icon"></i>
             </div>
-                <ul class="nav__ul">
-                    <li class="ul__li"><a href="index.html">Inicio</a></li>
-                    <li class="ul__li"><a href="personajes.html">Personajes</a></li>
-                    <li class="ul__li"><a href="galeria.html">Galería</a></li>
-                    <li class="ul__li"><a href="temporadas.html">Temporadas</a></li>
-                    <li class="ul__li"><a href="contacto.html">Contacto</a></li>
-                </ul>
+            <ul class="nav__ul">
+                <li class="ul__li"><a href="index.html">Inicio</a></li>
+                <li class="ul__li"><a href="personajes.html">Personajes</a></li>
+                <li class="ul__li"><a href="galeria.html">Galería</a></li>
+                <li class="ul__li"><a href="temporadas.html">Temporadas</a></li>
+                <li class="ul__li"><a href="contacto.html">Contacto</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -33,10 +33,10 @@
         <article>
             <h1>Kimetsu No Yaiba</h1>
             <p>En el Japón de la era Taisho, Tanjiro Kamado es un joven de buen corazón que se gana la vida vendiendo carbón. Pero su pacífica vida se hace añicos cuando un demonio asesina a su familia y convierte a su hermana Nezuko en un demonio.</p>
-            <div class="principal__buttons">
+            <span class="principal__buttons">
                 <a href="https://www.netflix.com/title/81091393" target="_blank"><button class="article__button-wn">Watch Now</button></a>
-                <button class="article__button-lm">Learn More</button>
-            </div>
+                <a href="#"><button class="article__button-lm">Learn More</button></a>
+            </span>
         </article>
         <div>
             <img src="imagenes/principal.jpg" alt="imagen principal del sitio">
@@ -86,7 +86,7 @@
             </div>
 
             <!-- flechitas de los costados -->
-            <article>
+            <article class="flechitas">
                 <div>
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -97,11 +97,25 @@
         <br>
 
         <!-- puntitos abajo de la galeria -->
-        <div style="text-align:center">
+        <div class="puntitos" style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
+
+        <!-- galeria para desktop -->
+        <section class="terciario__galeria-desktop">
+            <a href="https://www.rottentomatoes.com/tv/demon_slayer_kimetsu_no_yaiba/s01" class="galeria-desktop__img" id="temp-1" target="_blank">
+                <p class="parrafo">Temporada 1<br>Haz click para ver su calificacion</p>
+            </a>
+            <a href="https://www.rottentomatoes.com/m/demon_slayer_kimetsu_no_yaiba_the_movie_mugen_train" class="galeria-desktop__img" id="temp-2" target="_blank">
+                <p class="parrafo">Temporada 2 <br>Haz click para ver su calificacion</p>
+            </a>
+            <a href="https://www.rottentomatoes.com/tv/demon_slayer_kimetsu_no_yaiba/s04" class="galeria-desktop__img" id="temp-3" target="_blank">
+                <p class="parrafo">Temporada 3 <br>Haz click para ver su calificacion</p>
+            </a>
+        </section>
+
     </section>
     <footer>
         <div class="footer__container">
