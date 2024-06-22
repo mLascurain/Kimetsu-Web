@@ -531,6 +531,24 @@ input:focus{
     padding: 2rem;
 }
 
+.galeria__container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 8rem;
+}
+
+.galeria__container a{
+    display: flex;
+    justify-content: center;
+}
+
+.galeria__container a img{
+    width: 80%;
+    display: flex;
+}
+
 /* estilos para tablets grandes y laptops */
 @media screen and (min-width: 620px){
     .nav__toggle{
