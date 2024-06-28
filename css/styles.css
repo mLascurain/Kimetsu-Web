@@ -17,9 +17,6 @@ CERRAR EL MENU DE LA VISTA DEL CELULAR
     --negro-azabache: #1c1b1b;
     --gris-oscuro: #343031;
     --gris-claro: #C8C6CE;
-    --verde-musgo: #2f4538;
-    --amarillo-dorado: #CDA434;
-    --azul-medianoche: #191970;
     --blanco-puro: #ffffff;
     --negro-puro: #000000;
 }
@@ -64,6 +61,10 @@ body{
 /* estilos para celular */
 
 /* BARRA DE NAVEGACION */
+.header__nav{
+    background: #141414;
+}
+
 .header__nav div{
     display: flex;
     flex-direction: row;
@@ -92,7 +93,6 @@ body{
     padding-bottom: 0.6rem;
     padding-top: 0.6rem;
     border-bottom: 2px solid var(--rojo-carmesi);
-    background: var(--negro-azabache);
     transition: 0.4s;
 }
 
@@ -228,7 +228,7 @@ body{
 
 .secundario__article p{
     color: var(--gris-claro);
-    text-align: left;
+    text-align: center;
     border-bottom: 2px solid var(--rojo-carmesi);
     padding: 1rem 0;
 }
@@ -255,7 +255,7 @@ body{
 
 .cards__card p{
     color: var(--gris-claro);
-    text-align: left;
+    text-align: center;
 }
 
 .cards__card button{
@@ -523,6 +523,10 @@ input:focus{
     display: flex;
 }
 
+.galeria__h1, .contacto__h1, .temporadas__h1, .personajes__h1{
+    display: none;
+}
+
 /* estilos para tablets grandes y laptops */
 @media screen and (min-width: 620px){
     .nav__toggle{
@@ -590,6 +594,14 @@ input:focus{
     .header__nav div{
         padding: 2rem;
     }
+
+    .personajesCardReverse:first-child{
+        margin-top: 5rem;
+    }
+
+    .personajesCard img, .personajesCardReverse img{
+        width: 40%;
+    }
 }
 
 /* estilos para desktop */
@@ -610,6 +622,10 @@ input:focus{
     .header__logo{
         width: 14%;
         cursor: pointer;
+    }
+
+    .header__nav{
+        background: #141414;
     }
 
     .nav__ul-activate{
@@ -854,11 +870,35 @@ input:focus{
         justify-content: space-around;
     }
 
+    .temporadasCardReverse:first-child{
+        margin-top: 5rem;
+    }
+
+    .temporadasCard img, .temporadasCardReverse img{
+        width: 60%;
+    }
+
     .temporadasCard{
         flex-direction: row;
     }
 
     .temporadasCardReverse{
         flex-direction: row-reverse;
+    }
+
+    .personajes__card-content{
+        font-size: 1.2rem; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .personajes__card-content p{
+        width: 90%;
+    }
+
+    .personajes__cards{
+        width: 80%;
     }
 }
