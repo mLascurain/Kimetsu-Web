@@ -204,6 +204,7 @@ body{
     margin-top: 0.4rem;
     border: solid 2px var(--gris-oscuro);
     border-radius: 4px;
+    box-shadow: 0 0 1.2rem -1rem var(--gris-claro);
 }
 
 /* SECUNDARIO */
@@ -516,11 +517,20 @@ input:focus{
 .galeria__container a{
     display: flex;
     justify-content: center;
+
 }
 
 .galeria__container a img{
     width: 80%;
     display: flex;
+    border: 2px solid var(--gris-oscuro);
+    border-radius: 4px;
+    box-shadow: 0 0 1rem -1rem var(--gris-claro);
+}
+
+.galeria__container a img:hover{
+    transform: scale(0.97);
+    transition: 0.2s;
 }
 
 .galeria__h1, .contacto__h1, .temporadas__h1, .personajes__h1{
@@ -901,4 +911,19 @@ input:focus{
     .personajes__cards{
         width: 80%;
     }
+
+    .galeria__container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 2rem;
+    }
+
+    .galeria__container a img{
+        width: 30rem;
+    }
+
+    .form{
+        width: 40%;
+    }
+
 }
