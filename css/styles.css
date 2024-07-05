@@ -395,6 +395,10 @@ body{
     transform: scale(0.98);;
 }
 
+.section__contacto img{
+    display: none;
+}
+
 footer{
     display: flex;
     flex-direction: column;
@@ -537,6 +541,16 @@ input:focus{
     display: none;
 }
 
+.section__merch{
+    padding: 2rem;
+}
+
+.merch__card-content div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* estilos para tablets grandes y laptops */
 @media screen and (min-width: 620px){
     .nav__toggle{
@@ -609,8 +623,8 @@ input:focus{
         margin-top: 5rem;
     }
 
-    .personajesCard img, .personajesCardReverse img{
-        width: 40%;
+    .cards__card img{
+        width: 50%;
     }
 }
 
@@ -747,6 +761,12 @@ input:focus{
         width: 20rem;
     }
 
+    .cards__card img{
+        width: 60%;
+        border: 2px solid var(--gris-oscuro);
+        border-radius: 2px;
+    }
+
     .article__cards{
         display: flex;
         gap: 1rem;
@@ -867,6 +887,48 @@ input:focus{
         align-items: center;
     }
 
+    .personajesCard img, .personajesCardReverse img{
+        width: 40%;
+    }
+
+    .section__merch{
+        padding-top: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .merch__cards{
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 2rem;
+    }
+
+    .merchCard, .merchCardReverse{
+        justify-content: space-around;
+        height: 35rem;
+        width: 30rem;
+        padding: 2rem 0;
+    }
+
+    .merchCard{
+        flex-direction: column;
+    }
+
+    .merchCardReverse{
+        flex-direction: column;
+    }
+
+    .merchCard div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .temporadas__cards{
         display: flex;
         justify-content: center;
@@ -923,7 +985,26 @@ input:focus{
     }
 
     .form{
-        width: 40%;
+        width: 60%;
+    }
+
+    .form__container{
+        width: 100%;
+    }
+
+    .section__contacto{
+        display: flex;
+        padding-top: 5rem;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+    }
+
+    .section__contacto img{
+        display: inline;
+        width: 25%;
+        margin-right: 12rem;
+        margin-top: 3rem;
     }
 
 }
