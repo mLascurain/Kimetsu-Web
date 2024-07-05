@@ -544,6 +544,10 @@ input:focus{
     align-items: center;
 }
 
+.tienda__h1{
+    display: none;
+}
+
 /* estilos para tablets grandes y laptops */
 @media screen and (min-width: 620px){
     .nav__toggle{
