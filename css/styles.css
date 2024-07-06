@@ -222,7 +222,7 @@ body{
 
 .secundario__article p{
     color: var(--gris-claro);
-    text-align: center;
+    text-align: left;
     border-bottom: 2px solid var(--rojo-carmesi);
     padding: 1rem 0;
 }
@@ -249,7 +249,7 @@ body{
 
 .cards__card p{
     color: var(--gris-claro);
-    text-align: center;
+    text-align: left;
 }
 
 .cards__card button{
@@ -538,6 +538,10 @@ input:focus{
     padding: 2rem;
 }
 
+.merch__card-content p{
+    text-align: center;
+}
+
 .merch__card-content div{
     display: flex;
     justify-content: center;
@@ -751,7 +755,7 @@ input:focus{
 
     .secundario__article p{
         width: 50rem;
-        text-align: center;
+        text-align: left;
     }
 
     .cards__card{
